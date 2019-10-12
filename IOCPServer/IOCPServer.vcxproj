@@ -78,17 +78,12 @@
   <ItemGroup>
     <ClCompile Include="IOCPServer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Utils.cpp" />
     <ClCompile Include="WorkThread.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonHeader.h" />
     <ClInclude Include="IOCPServer.h" />
     <ClInclude Include="IOEvent.h" />
-    <ClInclude Include="IOEventDispatcher.h" />
-    <ClInclude Include="IOEventHandler.h" />
-    <ClInclude Include="Socket.h" />
-    <ClInclude Include="Utils.h" />
     <ClInclude Include="WorkThread.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -12,12 +12,14 @@ private:
 	void initializeThreadPool();
 	void acceptClient();
 
+	void uninitialize();
+
 	HANDLE createNewCompletionPort(uint32_t dwThreads = 0);
 	bool associateDeviceWithCompletionPort(
 		HANDLE hCompletionPort,HANDLE device,uint32_t dwCompletionKey);
 
 	HANDLE m_hIocp;
 	SOCKET m_listenSocket;
-	OVERLAPPED_DATA *m_pOverlappedData;
+	//OVERLAPPED_DATA *m_pOverlappedData;
 	WorkThread *m_pWorkThread;
 };
